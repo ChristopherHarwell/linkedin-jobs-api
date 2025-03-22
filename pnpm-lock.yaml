@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       axios:
-        specifier: ^0.27.2
-        version: 0.27.2
+        specifier: ^1.8.2
+        version: 1.8.2
       cheerio:
         specifier: ^1.0.0-rc.12
         version: 1.0.0
@@ -23,8 +23,8 @@ packages:
   asynckit@0.4.0:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
 
-  axios@0.27.2:
-    resolution: {integrity: sha512-t+yRIyySRTp/wua5xEr+z1q60QmLq8ABsS5O9Me1AsE5dfKqgnCFzwiCZZ/cGNd1lq4/7akDWMxdhVlucjmnOQ==}
+  axios@1.8.2:
+    resolution: {integrity: sha512-ls4GYBm5aig9vWx8AWDSGLpnpDQRtWAfrjU+EuytuODrFBkqesN2RkOQCBzrA1RQNHw1SmRMSDDDSwzNAYQ6Rg==}
 
   boolbase@1.0.0:
     resolution: {integrity: sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==}
@@ -169,6 +169,9 @@ packages:
   parse5@7.2.1:
     resolution: {integrity: sha512-BuBYQYlv1ckiPdQi/ohiivi9Sagc9JG+Ozs0r7b/0iK3sKmrb0b9FdWdBbOdx6hBCM/F9Ir82ofnBhtZOjCRPQ==}
 
+  proxy-from-env@1.1.0:
+    resolution: {integrity: sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==}
+
   random-seed@0.3.0:
     resolution: {integrity: sha512-y13xtn3kcTlLub3HKWXxJNeC2qK4mB59evwZ5EkeRlolx+Bp2ztF7LbcZmyCnOqlHQrLnfuNbi1sVmm9lPDlDA==}
     engines: {node: '>= 0.6.0'}
@@ -195,10 +198,11 @@ snapshots:
 
   asynckit@0.4.0: {}
 
-  axios@0.27.2:
+  axios@1.8.2:
     dependencies:
       follow-redirects: 1.15.9
       form-data: 4.0.2
+      proxy-from-env: 1.1.0
     transitivePeerDependencies:
       - debug
 
@@ -372,6 +376,8 @@ snapshots:
   parse5@7.2.1:
     dependencies:
       entities: 4.5.0
+
+  proxy-from-env@1.1.0: {}
 
   random-seed@0.3.0:
     dependencies:
